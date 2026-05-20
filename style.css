@@ -14,8 +14,8 @@ body {
 
 .hero {
     height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(18, 18, 18, 1)), url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Ataturk_with_the_public_1930.jpg') no-repeat center center/cover;
-    display: flex;
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 1)), url('https://img.ytv.com.tr/img/71/1200x675/5fc1f6615551d20cf4be9312.jpg') no-repeat center center/cover;
+
     align-items: center;
     justify-content: center;
     text-align: center;
