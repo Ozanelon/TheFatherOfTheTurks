@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; 
+}
+
+body {
+    background-color: #121212; 
+    color: #e0e0e0;
+}
+
+
+.hero {
+    height: 100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 1)), url('indir.jfif') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-icerik h1 {
+    font-size: 3.5rem;
+    color: #d4af37; 
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.hero-icerik .alt-baslik {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.hero-icerik .özlü-soz {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+
+.kronoloji {
+    padding: 80px 10%;
+    background-color: #161616;
+}
+
+.bolum-basligi {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 50px;
+}
+
+
+.zaman-seridi {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.kart {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #d4af37; 
+    transition: transform 0.3s ease;
+}
+
+.kart:hover {
+    transform: translateY(-5px); 
+}
+
+.tarih {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #121212;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.kart h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.kart p {
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #121212;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
