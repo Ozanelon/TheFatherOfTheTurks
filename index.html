@@ -12,7 +12,7 @@
         <div class="hero-icerik">
             <h1>Mustafa Kemal Atatürk</h1>
             <p class="alt-baslik">1881 - 193∞</p>
-            <p class="özlü-soz">"Benim naçiz vücudum bir gün elbet toprak olacaktır, fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır."</p>
+            <p class="özlü-soz">"Benim naçiz vücudum bir gun elbet toprak olacaktır, fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır."</p>
         </div>
     </section>
 
@@ -21,25 +21,25 @@
         
         <div class="zaman-seridi">
             
-            <div class="kart">
+            <div class="kart" style="cursor: pointer;" onclick="acModal('selanik')">
                 <span class="tarih">1881</span>
                 <h3>Selanik'te Doğan Güneş</h3>
                 <p>Selanik'te Ahmet Subaşı Mahallesi'nde doğdu. Ali Rıza Efendi ve Zübeyde Hanım'ın oğlu olarak dünyaya gözlerini açtı.</p>
             </div>
 
-            <div class="kart">
+            <div class="kart" style="cursor: pointer;" onclick="acModal('canakkale')">
                 <span class="tarih">1915</span>
                 <h3>Çanakkale Geçilmez!</h3>
                 <p>Anafartalar Grubu Komutanı olarak cephede dehasını konuşturdu ve tarihin akışını değiştiren askeri başarılara imza attı.</p>
             </div>
 
-            <div class="kart">
+            <div class="kart" style="cursor: pointer;" onclick="acModal('samsun')">
                 <span class="tarih">1919</span>
                 <h3>Kurtuluş Meşalesi</h3>
                 <p>19 Mayıs'ta Samsun'a ayak basarak milli mücadeleyi başlattı. Kongrelerle halkı tek bir çatı altında topladı.</p>
             </div>
 
-            <div class="kart">
+            <div class="kart" style="cursor: pointer;" onclick="acModal('cumhuriyet')">
                 <span class="tarih">1923</span>
                 <h3>Yaşasın Cumhuriyet</h3>
                 <p>29 Ekim'de Türkiye Cumhuriyeti ilan edildi ve Mustafa Kemal Atatürk, modern Türkiye'nin ilk Cumhurbaşkanı seçildi.</p>
@@ -49,8 +49,56 @@
     </section>
 
     <footer>
-        <p>Saygı, özlem ve minnetle anıyoruz. | Arkadaşımla Yapılan Ortak Proje © 2026</p>
+        <p>Saygı, özlem ve minnetle anıyoruz. |  © 2026</p>
     </footer>
+
+    <div id="modal-selanik" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="kapatModal('selanik')">&times;</span>
+            <h2 style="color: #ffcc00; margin-bottom: 15px;">Selanik'te Doğan Güneş (Çocukluk Yılları)</h2>
+            <p style="color: #e0e0e0; font-size: 16px; line-height: 1.8;">Mustafa Kemal Atatürk, 1881 yılında Selanik'te üç katlı pembe bir evde dünyaya geldi. Ali Rıza Efendi ve Zübeyde Hanım'ın oğlu olan küçük Mustafa, çocuk yaşta askeri üniformalara merak sardı ve Selanik Askeri Rüştiyesi'ne girerek efsanevi askeri kariyerinin ilk adımını attı.</p>
+        </div>
+    </div>
+
+    <div id="modal-canakkale" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="kapatModal('canakkale')">&times;</span>
+            <h2 style="color: #ffcc00; margin-bottom: 15px;">Çanakkale Geçilmez!</h2>
+            <p style="color: #e0e0e0; font-size: 16px; line-height: 1.8;">1915 yılında Anafartalar Grubu Komutanı olan Mustafa Kemal, "Ben size taarruzu emretmiyorum, ölmeyi emrediyorum!" sözüyle tarihin akışını değiştirdi. Conkbayırı ve Anafartalar'da kazandığı zaferlerle düşman ordularını durdurdu ve tüm dünyada "Çanakkale Kahramanı" olarak tanındı.</p>
+        </div>
+    </div>
+
+    <div id="modal-samsun" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="kapatModal('samsun')">&times;</span>
+            <h2 style="color: #ffcc00; margin-bottom: 15px;">Kurtuluş Meşalesi</h2>
+            <p style="color: #e0e0e0; font-size: 16px; line-height: 1.8;">19 Mayıs 1919'da Bandırma Vapuru ile Samsun'a çıkan Mustafa Kemal, Türk milletinin bağımsızlık savaşını başlattı. Amasya, Erzurum ve Sivas Kongreleri ile halkı tek bir çatı altında toplayarak düzenli orduyu kurdu ve milli mücadeleyi örgütledi.</p>
+        </div>
+    </div>
+
+    <div id="modal-cumhuriyet" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="kapatModal('cumhuriyet')">&times;</span>
+            <h2 style="color: #ffcc00; margin-bottom: 15px;">Yaşasın Cumhuriyet</h2>
+            <p style="color: #e0e0e0; font-size: 16px; line-height: 1.8;">29 Ekim 1923'te "Efendiler, yarın cumhuriyeti ilan edeceğiz" diyerek yeni Türk devletinin yönetim biçimini belirledi. Türkiye Cumhuriyeti ilan edildi ve Mustafa Kemal Atatürk oy birliğiyle ilk Cumhurbaşkanı seçilerek ülkeyi modern medeniyetler seviyesine çıkaracak devrimleri başlattı.</p>
+        </div>
+    </div>
+
+    <script>
+    function acModal(id) {
+        document.getElementById("modal-" + id).style.display = "block";
+    }
+
+    function kapatModal(id) {
+        document.getElementById("modal-" + id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+        }
+    }
+    </script>
 
 </body>
 </html>
