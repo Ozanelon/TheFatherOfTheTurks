@@ -14,7 +14,6 @@ body {
 
 .hero {
     height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(18, 18, 18, 1)), url('https://upload.wikimedia.org/wikipedia/commons/c/c2/Ataturk_with_kalpak.jpg') no-repeat center center/cover;
     align-items: center;
     justify-content: center;
     text-align: center;
