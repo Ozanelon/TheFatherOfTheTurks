@@ -12,7 +12,7 @@
         <div class="hero-icerik">
             <h1>Mustafa Kemal Ataturk</h1>
             <p class="alt-baslik">1881 - 193∞</p>
-            <p class="özlü-soz">"My humble body will surely turn into dust one day, but the Republic of Turkey will stand forever."</p>
+            <p class="ozlu-soz">"My humble body will surely turn into dust one day, but the Republic of Turkey will stand forever."</p>
         </div>
     </section>
 
@@ -44,6 +44,13 @@
                 <h3>Long Live the Republic</h3>
                 <p>On October 29th, the Republic of Turkey was proclaimed, and Mustafa Kemal Ataturk was elected as the first President of modern Turkey.</p>
             </div>
+
+            <div class="kart" style="cursor: pointer;" onclick="acModal('vefat')">
+                <span class="tarih">1938</span>
+                <h3>Legacy of a Great Leader</h3>
+                <p>Mustafa Kemal Ataturk passed away on November 10th, 1938, leaving behind a legacy of independence, modernization, and national pride.</p>
+            </div>
+
 
         </div>
     </section>
@@ -87,6 +94,14 @@
         </div>
     </div>
 
+    <div id="modal-vefat" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="kapatModal('vefat')">&times;</span>
+            <h2 style="color: #ffcc00; margin-bottom: 15px;">Legacy of a Great Leader</h2>
+            <p style="color: #e0e0e0; font-size: 16px; line-height: 1.8;">On November 10, 1938, Mustafa Kemal Ataturk passed away, the man who saved a crumbling empire was honored at his grave by hundreds of thousands, leaving behind a nation of honor.</p>
+        </div>
+    </div>
+
     <script>
     function acModal(id) {
         document.getElementById("modal-" + id).style.display = "block";
@@ -101,7 +116,27 @@
             event.target.style.display = "none";
         }
     }
+
+    window.onscroll = function(){
+        scrollKontrol();
+    };
+
+    function scrollKontrol(){
+        let button = document.getElementById("yukari-cik");
+        if(document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 300){
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    function ustSeviyeyeCik(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     </script>
 
+<button id="yukari-cik" onclick="ustSeviyeyeCik()">▲</button>
 </body>
 </html>
